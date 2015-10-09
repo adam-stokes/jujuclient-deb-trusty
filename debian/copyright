@@ -1,0 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
+Upstream-Name: Python Juju Client
+Source: https://launchpad.net/python-jujuclient
+
+Files: *
+Copyright: 2013, Kapil Thangavelu <kapil.foss@gmail.com>
+License: GPL-3
+
+Files: debian/*
+Copyright: 2013, Canonical Ltd (http://www.canonical.com)
+License: GPL-3
+
+License: GPL-3
+  On Debian GNU/Linux system you can find the complete text of the
+  GPL-3 license in '/usr/share/common-licenses/GPL-3'

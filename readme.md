@@ -1,0 +1,1 @@
+# jujuclient - debian packaging (trusty)

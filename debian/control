@@ -1,0 +1,24 @@
+Source: python-jujuclient
+Section: python
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Andreas Hasenack <andreas@canonical.com>
+Build-Depends: debhelper (>= 9~), python-all (>= 2.6.6-3~), python-setuptools, dh-python, python3-all, python3-setuptools
+Standards-Version: 3.9.6
+Homepage: https://launchpad.net/python-jujuclient
+
+Package: python-jujuclient
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python API client for Juju (Python 2)
+ A simple synchronous python client for the Juju websocket API.
+ .
+ This package installs the library for Python 2.
+
+Package: python3-jujuclient
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python API client for Juju (Python 3)
+ A simple synchronous python client for the Juju websocket API.
+ .
+ This package installs the library for Python 3.

@@ -1,0 +1,74 @@
+python-jujuclient (0.50.1-0ubuntu1~14.04.1~osi3) trusty; urgency=medium
+
+  * fix py3-overrides
+
+ -- adam stokes <adam@bigboi>  Fri, 09 Oct 2015 10:55:57 -0400
+
+python-jujuclient (0.50.1-0ubuntu1~15.04.1~osi1) vivid; urgency=medium
+
+  * New upstream release.
+  * debian/watch: Update to use PyPI redirector.
+  * debian/compat: Bump to 9.
+  * debian/control:
+    - Build-depend on python3-all and python3-setuptools.
+    - Bump debhelper build dependency to >= 9~.
+    - Bump Standards-Version to 3.9.6.
+    - Add python3-jujuclient package.
+    - Fix grammatical issues in descriptions and distinguish Python 2 and 3
+      packages.
+  * debian/rules: Use pybuild to build for Python 3.
+
+ -- Logan Rosen <logan@ubuntu.com>  Mon, 25 May 2015 02:56:49 -0400
+
+python-jujuclient (0.18.5-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release.
+  * d/pydist-overrides: declare PEP386 to get a correctly versioned
+    dependency on python-websocket.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Thu, 08 Jan 2015 12:00:24 +0000
+
+python-jujuclient (0.17.5-0ubuntu2) trusty; urgency=medium
+
+  * Switch binary dependency from duplicate package
+    python-websocket-client to canonical package python-websocket
+    (LP: #1292502):
+    - d/pydist-overrides: map websocket-client to binary package
+      python-websocket.
+    - d/control: drop explicit dependency on python-websocket-client and
+      rely on ${python:Depends} instead.
+  * Standards-Version: 3.9.5 (no changes required).
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Mon, 17 Mar 2014 15:42:50 +0000
+
+python-jujuclient (0.17.5-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release:
+    - Rework fix for issue with 'state watcher has stopped' messages
+      (LP: #1284690).
+
+ -- James Page <james.page@ubuntu.com>  Tue, 11 Mar 2014 16:40:57 +0000
+
+python-jujuclient (0.17.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release:
+    - Avoid issues with 'state watcher was stopped' messages when
+      processes are forced to re-connect to Juju MongoDB (LP: #1284690).
+
+ -- James Page <james.page@ubuntu.com>  Tue, 04 Mar 2014 18:00:18 +0000
+
+python-jujuclient (0.15-0ubuntu1) trusty; urgency=low
+
+  * New upstream release.
+
+ -- James Page <james.page@ubuntu.com>  Mon, 25 Nov 2013 09:24:53 +0000
+
+python-jujuclient (0.0.9-0ubuntu1) saucy; urgency=low
+
+  [ Andreas Hasenack ]
+  * Initial packaging.
+
+  [ James Page ]
+  * d/copyright: Document copyright and licensing.
+
+ -- James Page <james.page@ubuntu.com>  Tue, 20 Aug 2013 12:30:51 +0100
